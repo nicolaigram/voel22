@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/nicolaigram.github.io/voel22/static/css/main.3ac3a0db.css",
-    "main.js": "/nicolaigram.github.io/voel22/static/js/main.b65f6db3.js",
-    "static/js/787.66925caf.chunk.js": "/nicolaigram.github.io/voel22/static/js/787.66925caf.chunk.js",
-    "index.html": "/nicolaigram.github.io/voel22/index.html",
-    "main.3ac3a0db.css.map": "/nicolaigram.github.io/voel22/static/css/main.3ac3a0db.css.map",
-    "main.b65f6db3.js.map": "/nicolaigram.github.io/voel22/static/js/main.b65f6db3.js.map",
-    "787.66925caf.chunk.js.map": "/nicolaigram.github.io/voel22/static/js/787.66925caf.chunk.js.map"
+    "main.css": "/static/css/main.3ac3a0db.css",
+    "main.js": "/static/js/main.44a74635.js",
+    "static/js/787.66925caf.chunk.js": "/static/js/787.66925caf.chunk.js",
+    "index.html": "/index.html",
+    "main.3ac3a0db.css.map": "/static/css/main.3ac3a0db.css.map",
+    "main.44a74635.js.map": "/static/js/main.44a74635.js.map",
+    "787.66925caf.chunk.js.map": "/static/js/787.66925caf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3ac3a0db.css",
-    "static/js/main.b65f6db3.js"
+    "static/js/main.44a74635.js"
   ]
 }
