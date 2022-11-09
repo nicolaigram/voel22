@@ -6,20 +6,29 @@ const googleSheetUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTtDx8l-
 export const useGoogleSheetData = () => {
     const [data, setData] = useState<any>({});
 
-    useEffect(() => {
+    const fetchAndSetData = () => {
         Papa.parse(googleSheetUrl, {
             download: true,
             header: true,
             complete: (results) => {
                 const parsedData = parseData(results.data)
                 setData(parsedData);
-                // setData(results.data)
             },
         });
-    },[])
+    }
 
+    useEffect(() => {
+        fetchAndSetData()
+        const seconds = 5
+        const interval = setInterval(() => fetchAndSetData(), seconds * 1000)
+        return () => clearInterval(interval)
+
+    }, [])
     return data
+
 }
+
+
 
 const parseData = (rawResponseData: any) => {
     const returnData: any = {}

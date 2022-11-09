@@ -2,7 +2,7 @@
   "name": "voel22",
   "version": "0.1.0",
   "private": true,
-  "homepage": "nicolaigram.github.io/voel22",
+  "homepage": "https://nicolaigram.github.io/",
   "dependencies": {
     "@chakra-ui/react": "^2.3.7",
     "@emotion/react": "^11.10.5",
@@ -24,11 +24,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "copy": "cp ./CNAME ./build/CNAME",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && npm run copy",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
