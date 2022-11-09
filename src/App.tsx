@@ -1,26 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Teams } from './sections/Teams';
+import { Box, ChakraProvider } from '@chakra-ui/react'
+import { DataContext, useGoogleSheetData } from './data';
+import { Welcome } from './sections/Welcome';
+import { Games } from './sections/Games';
 
 function App() {
+  const data = useGoogleSheetData()
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ChakraProvider>
+      <DataContext.Provider value={data}>
+        <Box paddingTop={"40px"}>
+          <Welcome />
+          <Teams />
+          <Games />
+        </Box>
+      </DataContext.Provider>
+    </ChakraProvider>
   );
 }
+
 
 export default App;
