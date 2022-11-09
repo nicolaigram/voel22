@@ -2,7 +2,7 @@
   "name": "voel22",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nicolaigram.github.io/voel22",
+  "homepage": "nicolaigram.github.io/voel22",
   "dependencies": {
     "@chakra-ui/react": "^2.3.7",
     "@emotion/react": "^11.10.5",
