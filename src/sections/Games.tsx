@@ -1,4 +1,4 @@
-import { Box, Center, Heading } from '@chakra-ui/react'
+import { Box, Center, Heading, Text } from '@chakra-ui/react'
 import React, {useContext, useState, useEffect} from 'react'
 import { DataContext } from '../data'
 
@@ -12,6 +12,7 @@ export const Games = () => {
     return <Center flexDirection={"column"} paddingBottom={"100px"}>
         <Box paddingBottom={"40px"}>
             <Heading>Discipliner</Heading>
+            <Text>Herunder er de ansvarlige for at opfinde afvikle hver enkelt disciplin</Text>
         </Box>
         {games.map((game: any) => renderGame(game))}
     </Center>
