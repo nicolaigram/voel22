@@ -15,7 +15,7 @@ export const Teams = () => {
     return (
         <div>
             <Center flexDirection={"column"} paddingBottom={"100px"}>   
-                <Box paddingBottom={"40px"}>
+                <Box maxWidth={"80%"} paddingBottom={"40px"}>
                     <Heading>Hold</Heading>
                     <Text>Her er fordelingen af hold, som skal dyste om at vinde VØL22</Text>
                 </Box>
@@ -32,7 +32,7 @@ const renderTeam = (team: any) => {
     return <Box maxW="sm" paddingBottom="20px">
         <Heading size={"md"}>{teamName}</Heading>
         {teamMembers.map((name: any) => (
-            <p>{name}</p>
+            <Text textAlign={"center"}>{name}</Text>
         ))}
     </Box>
 }

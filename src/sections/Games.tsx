@@ -10,9 +10,9 @@ export const Games = () => {
     },[data])
 
     return <Center flexDirection={"column"} paddingBottom={"100px"}>
-        <Box paddingBottom={"40px"}>
+        <Box maxWidth={"80%"} paddingBottom={"40px"}>
             <Heading>Discipliner</Heading>
-            <Text>Herunder er de ansvarlige for at opfinde afvikle hver enkelt disciplin</Text>
+            <Text textAlign={"center"}>Herunder er de ansvarlige for at opfinde afvikle hver enkelt disciplin</Text>
         </Box>
         {games.map((game: any) => renderGame(game))}
     </Center>
@@ -25,7 +25,7 @@ const renderGame = (game: any) => {
     return <Box paddingBottom={"20px"}>
         <Heading size={"md"}>{gameName}</Heading>
         {gameMembers.map((name: any) => (
-            <p>{name}</p>
+            <Text textAlign={"center"}>{name}</Text>
         ))}
     </Box>
 }
