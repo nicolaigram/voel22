@@ -12,7 +12,7 @@ export const Games = () => {
     return <Center flexDirection={"column"} paddingBottom={"100px"}>
         <Box maxWidth={"80%"} paddingBottom={"40px"}>
             <Heading>Discipliner</Heading>
-            <Text textAlign={"center"}>Herunder er de ansvarlige for at opfinde afvikle hver enkelt disciplin</Text>
+            <Text textAlign={"center"}>Herunder er de ansvarlige for at opfinde og afvikle hver enkelt disciplin</Text>
         </Box>
         {games.map((game: any) => renderGame(game))}
     </Center>

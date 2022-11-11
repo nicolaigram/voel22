@@ -17,7 +17,7 @@ export const Teams = () => {
             <Center flexDirection={"column"} paddingBottom={"100px"}>   
                 <Box maxWidth={"80%"} paddingBottom={"40px"}>
                     <Heading>Hold</Heading>
-                    <Text>Her er fordelingen af hold, som skal dyste om at vinde VØL22</Text>
+                    <Text textAlign={"center"}>Her er fordelingen af hold, som skal dyste om at vinde VØL22</Text>
                 </Box>
                 {teams.map((team: any) => renderTeam(team))}
             </Center>
