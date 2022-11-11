@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import * as Papa from "papaparse";
+import {v4 as uuidv4} from 'uuid';
 
 const googleSheetUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTtDx8l-qQhNXP84fZukk54dKcZgJjEimhMOxn0zrzSA_0L5LxBkhTK3j71tMVAxU4xMMIIYoypaJjJ/pub?output=csv"
 
 export const useGoogleSheetData = () => {
     const [data, setData] = useState<any>({});
-
     const fetchAndSetData = () => {
-        Papa.parse(googleSheetUrl, {
+        Papa.parse(googleSheetUrl + "&foo=" + uuidv4() , {
             download: true,
             header: true,
             complete: (results) => {
